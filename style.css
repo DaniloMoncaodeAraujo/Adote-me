@@ -19,7 +19,7 @@ header {
         color: #989D9C;
     }
 
-    a:hover{
+    a:hover {
         cursor: pointer;
         transition: 0.4s linear;
         font-size: 1.3rem;
@@ -36,12 +36,12 @@ header {
         color: #ffffff;
     }
 
-    button:hover{
+    button:hover {
         cursor: pointer;
         background-color: #515151;
         transition: 0.4s linear;
         font-size: 1.2rem;
-        
+
     }
 }
 
@@ -49,7 +49,7 @@ section {
     display: flex;
     margin: 5rem 0 0 4rem;
 
-    img{
+    img {
         height: 90%;
         animation: moverfoto 3s infinite alternate ease-in-out;
     }
@@ -58,46 +58,47 @@ section {
         display: flex;
         flex-direction: column;
         align-items: start;
-     h1{
-        font-size: 6rem;
-        font-weight: 900;
-        color: #515151;
-        font-family: "Montserrat", sans-serif;
-     }
 
-     h2{
-        font-size: 4rem;
-        font-weight: 400;
-        color: #515151;
-        font-family: "Montserrat", sans-serif;
-     }
-    
-     p{
-        color: #989D9C;
-        font-size: 1.2rem;
-        margin: 2rem 0 2rem 0;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-     }
+        h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: #515151;
+            font-family: "Montserrat", sans-serif;
+        }
 
-     button{
-        background-color: #ADFF00;
-        border-radius: 20px;
-        border: #ADFF00;
-        padding: 0.8rem;
-        font-weight: 600;
-        color: black;
-        font-size: 1.5rem;
-        border-radius: 2rem;
-        width: 220px;
-     }
+        h2 {
+            font-size: 4rem;
+            font-weight: 400;
+            color: #515151;
+            font-family: "Montserrat", sans-serif;
+        }
 
-     button:hover{
-        cursor: pointer;
-        background-color: #515151;
-        transition: 0.4s linear;
-        font-size: 1.6rem;
-     }
+        p {
+            color: #989D9C;
+            font-size: 1.2rem;
+            margin: 2rem 0 2rem 0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+
+        button {
+            background-color: #ADFF00;
+            border-radius: 20px;
+            border: #ADFF00;
+            padding: 0.8rem;
+            font-weight: 600;
+            color: black;
+            font-size: 1.5rem;
+            border-radius: 2rem;
+            width: 220px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #515151;
+            transition: 0.4s linear;
+            font-size: 1.6rem;
+        }
 
     }
 
@@ -105,7 +106,137 @@ section {
 }
 
 @keyframes moverfoto {
-    from{
-       transform: translate(-4%, -4%) rotate(-4deg);
+    from {
+        transform: translate(-4%, -4%) rotate(-4deg);
     }
-   }
+}
+
+/* Para telas até 1024px (tablets em modo paisagem) */
+@media (max-width: 1024px) {
+    section {
+        div img {
+            width: 400px;
+            height: auto;
+        }
+
+        .box-text {
+            margin-left: 1rem;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+
+
+        }
+    }
+}
+
+/* Para telas até 768px (tablets e smartphones grandes) */
+@media (max-width: 768px) {
+    header {
+        a {
+            font-size: 1rem;
+        }
+
+        a:hover {
+            font-size: 1.2rem;
+        }
+    }
+
+    section {
+        div img {
+            width: 300px;
+            height: auto;
+        }
+
+        .box-text {
+            margin-left: 1rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+
+
+        }
+    }
+}
+
+/* Para telas até 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    header {
+        gap: 1rem;
+        margin-left: 1rem;
+
+        a {
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        a:hover {
+            font-size: 0.9rem;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        button:hover {
+            font-size: 1.1rem;
+        }
+
+    }
+
+    section {
+        margin: 1rem 1rem;
+        flex-direction: column;
+
+        div img {
+            width: 350px;
+            height: auto;
+        }
+
+        .box-text {
+            margin-left: 1rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            button{
+                font-size: 1.2rem;
+                width: 100%;
+            }
+
+            button:hover{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
